@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tillim</title>
+</head>
+
+<body>
+    <div id='miri'></div>
+    <script>
+
+        fetch("http://localhost:5050/Skad")
+            .then((response) => response.json())
+            .then((json) => document.querySelector('#miri').innerHTML = JSON.stringify(json));
+
+       // console.log(JSON.stringify(json.Skad))
+            // + JSON.stringify(json.height)
+    </script>
+</body>
+
+</html>
